@@ -79,7 +79,7 @@ src/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/Happy_MCQ.git
+git clone https://isaac1376.github.io/Happy_MCQ/
 cd Happy_MCQ
 ```
 
