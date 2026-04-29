@@ -6,7 +6,7 @@ A modern, responsive Multiple Choice Question (MCQ) web application built using 
 
 ## 🚀 Live Demo
 
-👉 https://YOUR_USERNAME.github.io/Happy_MCQ/
+👉 https://isaac1376.github.io/Happy_MCQ/ 
 
 ---
 
