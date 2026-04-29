@@ -1,116 +1,138 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animated README Text</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: radial-gradient(circle at top, #272b62 0%, #0b0f1e 100%);
-      color: #f8f9ff;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+# 🎯 Happy MCQ Application
 
-    .hero {
-      text-align: center;
-      padding: 2rem;
-      max-width: 720px;
-    }
+A modern, responsive Multiple Choice Question (MCQ) web application built using **HTML, CSS, and JavaScript (React + Vite)**.
 
-    .hero h1 {
-      font-size: clamp(3rem, 6vw, 5rem);
-      margin: 0 0 1rem;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      animation: glow 2.5s ease-in-out infinite alternate;
-    }
+---
 
-    .hero p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      max-width: 600px;
-      margin: 0 auto;
-      color: #d7dbff;
-    }
+## 🚀 Live Demo
 
-    .typing {
-      display: inline-block;
-      font-family: "Courier New", Courier, monospace;
-      color: #72c7ff;
-      font-size: 1.3rem;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 0.18em solid #72c7ff;
-      min-height: 1.5em;
-      animation: blink 0.75s step-end infinite;
-    }
+👉 https://YOUR_USERNAME.github.io/Happy_MCQ/
 
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 12px rgba(114, 199, 255, 0.55),
-                     0 0 30px rgba(114, 199, 255, 0.2);
-      }
-      to {
-        text-shadow: 0 0 24px rgba(114, 199, 255, 0.95),
-                     0 0 45px rgba(114, 199, 255, 0.35);
-      }
-    }
+---
 
-    @keyframes blink {
-      50% {
-        border-color: transparent;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="hero">
-    <h1>Happy MCQ</h1>
-    <p class="typing" id="typing"></p>
-    <p>Build your quiz app landing page with animated text and a smooth typing effect.</p>
-  </div>
+## 📌 Features
 
-  <script>
-    const lines = [
-      "Fast quizzes.",
-      "Interactive topics.",
-      "React + Django backend soon.",
-      "Learn while you play."
-    ];
+* 🧠 Multiple Choice Questions (MCQ system)
+* ⏱️ Timer-based exam
+* 📊 Score calculation
+* 📱 Fully responsive design
+* 🎨 Modern UI with smooth animations
+* ⚡ Fast performance using Vite
+* 🔁 Auto navigation between questions
 
-    const typingEl = document.getElementById("typing");
-    let lineIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
+---
 
-    function typeLoop() {
-      const current = lines[lineIndex];
-      if (!deleting) {
-        typingEl.textContent = current.slice(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === current.length) {
-          deleting = true;
-          setTimeout(typeLoop, 1400);
-          return;
-        }
-      } else {
-        typingEl.textContent = current.slice(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-          deleting = false;
-          lineIndex = (lineIndex + 1) % lines.length;
-          setTimeout(typeLoop, 500);
-          return;
-        }
-      }
-      setTimeout(typeLoop, deleting ? 70 : 120);
-    }
+## 🛠️ Technologies Used
 
-    typeLoop();
-  </script>
-</body>
-</html>
+### 🌐 HTML
+
+* Structure of the web application
+* Semantic layout for questions and answers
+* Root container for React rendering
+
+---
+
+### 🎨 CSS
+
+* Responsive design (mobile + desktop)
+* Modern UI (glassmorphism, gradients)
+* Hover effects and transitions
+* Styled buttons and layouts
+
+---
+
+### ⚙️ JavaScript
+
+* Core logic for MCQ system
+* Timer functionality
+* Score tracking
+* Dynamic rendering using React
+* State management with hooks (`useState`, `useEffect`)
+
+---
+
+## ⚛️ Frameworks & Tools
+
+* React JS
+* Vite (for fast development & build)
+* gh-pages (for deployment)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── App.jsx
+ ├── main.jsx
+ ├── App.css
+ ├── data.js
+ └── components/
+      ├── Question.jsx
+      └── Result.jsx
+```
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/YOUR_USERNAME/Happy_MCQ.git
+cd Happy_MCQ
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Run locally
+
+```
+npm run dev
+```
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+```
+npm run build
+npm run deploy
+```
+
+---
+
+## 🧪 Future Improvements
+
+* 🔐 User authentication
+* 🗄️ Database integration
+* 📊 Performance analytics
+* 📝 Admin panel for adding questions
+* 🎯 Category-wise tests
+
+---
+
+## 👨‍💻 Author
+
+Dhivagar
+📍 Chennai, India
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork it
+* 🧠 Contribute improvements
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
