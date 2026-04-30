@@ -8,8 +8,8 @@ A modern and responsive quiz application built using <b>HTML, CSS, and JavaScrip
 
 <h2>🚀 Live Demo</h2>
 <p>
-👉 <a href="https://https://isaac1376.github.io/Happy_MCQ/" target="_blank"> 
-Visit Happy MCQ App
+👉  
+Visit Happy MCQ App https://isaac1376.github.io/Happy_MCQ/
 </a>
 </p>
 
