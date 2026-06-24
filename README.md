@@ -4,6 +4,8 @@
 A modern and responsive quiz application built using <b>HTML, CSS, and JavaScript (React + Vite)</b> for competitive exam preparation.
 </p>
 
+<img width="1536" height="1024" alt="ChatGPT Image Jun 24, 2026, 12_01_57 PM" src="https://github.com/user-attachments/assets/7efb1bed-4134-4408-80ca-89348072b909" />
+
 <hr>
 
 <h2>🚀 Live Demo</h2>
